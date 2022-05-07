@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" styleClass="parent-box" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ParentItemController">
+   <children>
+      <VBox layoutX="186.0" layoutY="90.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="810.0">
+               <children>
+                  <ComboBox fx:id="parentCombo" onAction="#selectParent" prefHeight="33.0" prefWidth="183.0" promptText="Parent" styleClass="combo" stylesheets="@style.css" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="First Name" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fName" alignment="TOP_LEFT" prefHeight="42.0" prefWidth="300.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="Last Name" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lName" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="660.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="Age" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="age" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="Phone Number" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phone" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0" promptText="+1" styleClass="text-field" stylesheets="@style.css">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="245.0" styleClass="field-name" stylesheets="@style.css" text="National Id N°" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NationalId" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0" promptText="XXXXXXXX">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="Email" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0" promptText="abcd3@domain.org">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="Profession" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="professionCombo" onAction="#selectProfession" prefHeight="46.0" prefWidth="295.0" promptText="profession" styleClass="combo" stylesheets="@style.css" />
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="244.0" styleClass="field-name" stylesheets="@style.css" text="Income" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="income" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0" promptText="\$">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

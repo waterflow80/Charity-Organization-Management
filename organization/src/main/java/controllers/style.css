@@ -1,0 +1,8 @@
+.nav-bar{
+	-fx-background-color: #dad9d9;	
+}
+
+.btn {
+	-fx-background-color: #cecdcd;
+	-fx-border-width: 0px 0px 2px 0px;
+}
