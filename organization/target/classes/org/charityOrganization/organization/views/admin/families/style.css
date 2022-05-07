@@ -1,0 +1,40 @@
+.parent-box {
+	-fx-border-width: 3px 0px 0px 0px;
+	-fx-border-color: #C41E3A;
+	
+}
+
+.text-field {
+	-fx-background-color: transparent;
+	-fx-border-width: 0px 0px 3px 0px;
+	-fx-border-color: #C41E3A;
+}
+
+.field-name {
+	-fx-text-fill: black;
+}
+
+.button{
+	-fx-background-color: #C41E3A;
+	-fx-background-radius: 15;
+	-fx-text-fill: white;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+	-fx-padding: 3px 3px 3px 3px;
+}
+
+.control-button {
+	-fx-background-color: #279613;
+	-fx-background-radius: 5;
+	-fx-text-fill: white;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+	-fx-padding: 10px 10px 10px 10px;
+}
+.combo{
+	-fx-background-color: #a39e9d;
+	-fx-background-radius: 15;
+	-fx-text-fill: white;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}

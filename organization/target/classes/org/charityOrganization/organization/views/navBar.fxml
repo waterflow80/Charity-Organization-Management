@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="nav-bar" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnHome" mnemonicParsing="false" onMouseExited="#homeUnHovered" onMouseMoved="#homeHovered" prefHeight="59.0" prefWidth="131.0" styleClass="btn" stylesheets="@style.css" text="Home">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFamilies" mnemonicParsing="false" onMouseExited="#familiesUnHovered" onMouseMoved="#familiesHovered" prefHeight="59.0" prefWidth="131.0" styleClass="btn" stylesheets="@style.css" text="Familes">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMembers" mnemonicParsing="false" onMouseExited="#membersUnHovered" onMouseMoved="#membersHovered" prefHeight="59.0" prefWidth="131.0" styleClass="btn" stylesheets="@style.css" text="Members">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMissions" mnemonicParsing="false" onMouseExited="#missionsUnHovered" onMouseMoved="#missionsHovered" prefHeight="59.0" prefWidth="131.0" styleClass="btn" stylesheets="@style.css" text="Missions">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDonations" mnemonicParsing="false" onMouseExited="#donationsUnHovered" onMouseMoved="#donationsHovered" prefHeight="59.0" prefWidth="141.0" styleClass="btn" stylesheets="@style.css" text="Donations">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExpenses" mnemonicParsing="false" onMouseExited="#expensesUnHoverd" onMouseMoved="#expensesHoverd" prefHeight="59.0" prefWidth="131.0" styleClass="btn" stylesheets="@style.css" text="Expenses">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="54.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnLogout" mnemonicParsing="false" onMouseExited="#logoutUnHovered" onMouseMoved="#logoutHovered" prefHeight="59.0" prefWidth="131.0" styleClass="btn" stylesheets="@style.css" text="Logout">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
