@@ -1,11 +1,6 @@
 package controllers;
 
 
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
-
 import entities.FamilyMember;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,11 +13,15 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
-public class AddFamilyController implements Initializable{
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+
+public class AddFamilyController implements Initializable {
 
 	private int column = 0;
 	private int row = 0;
@@ -40,22 +39,12 @@ public class AddFamilyController implements Initializable{
 	@FXML
     private Button addChildBtn;
 	
-	@FXML
-    private GridPane navBar;
-	
 	 @FXML
 	 private GridPane parentGrid;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-
 		try {
-			//Adding the nav-bar on the top of the page
-			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource("/org/charityOrganization/organization/views/admin/navigation/navBar.fxml"));
-			AnchorPane anchorPane = fxmlLoader.load();
-			navBar.add(anchorPane, 0, 0);
-			
 			// Adding the first parent form (item) to the page
 			FXMLLoader parentLoader = new FXMLLoader();
 			parentLoader.setLocation(getClass().getResource("/org/charityOrganization/organization/views/admin/families/parentItem.fxml"));

@@ -5,8 +5,7 @@ public class Account {
 	 private String email;
 	 private String password;
 	 private Admin admin;
-	 
-	 
+
 	 public Account() {
 		// TODO Auto-generated constructor stub
 	}

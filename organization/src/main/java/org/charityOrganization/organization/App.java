@@ -2,6 +2,7 @@ package org.charityOrganization.organization;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -17,11 +18,13 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("views/admin/families/addFamily"), 1920, 1080);
-        stage.setMinWidth(900);
-        stage.setMaxWidth(1920);
+        Parent node = FXMLLoader.load(getClass().getResource("views/admin/navigation/mainNavigator.fxml"));
+
+        scene = new Scene(loadFXML("views/admin/families/addFamily"), 800, 600);
+        scene.setRoot(node);
+        stage.setMaximized(true);
+
         stage.setScene(scene);
-       // stage.resizableProperty().set(true);
         stage.show();
     }
 

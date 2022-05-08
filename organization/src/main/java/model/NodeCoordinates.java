@@ -1,42 +1,40 @@
 package model;
 
 public class NodeCoordinates {
-	private int row;
-	private int column;
-	
-	
-	public NodeCoordinates() {
-		super();
-	}
+    private int row;
+    private int column;
 
 
-	public NodeCoordinates(int row, int column) {
-		super();
-		this.row = row;
-		this.column = column;
-	}
+    public NodeCoordinates() {
+        super();
+    }
 
 
-	public int getRow() {
-		return row;
-	}
+    public NodeCoordinates(int row, int column) {
+        super();
+        this.row = row;
+        this.column = column;
+    }
 
 
-	public void setRow(int row) {
-		this.row = row;
-	}
+    public int getRow() {
+        return row;
+    }
 
 
-	public int getColumn() {
-		return column;
-	}
+    public void setRow(int row) {
+        this.row = row;
+    }
 
 
-	public void setColumn(int column) {
-		this.column = column;
-	}
-	
-	
-	
-	
+    public int getColumn() {
+        return column;
+    }
+
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+
 }	
